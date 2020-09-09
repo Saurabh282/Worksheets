@@ -1,0 +1,52 @@
+WORKSHEET 2
+Python
+Q.1
+Ans: B
+Q.2
+Ans: C
+Q.3
+Ans: A
+Q.4
+Ans: A
+Q.5
+Ans: C
+Q.6
+Ans: C
+Q.7
+Ans: A 
+Q.8
+Ans: B
+Q.9
+Ans: A,B,D
+Q.10
+Ans: C
+
+Q.11
+Ans: 	List:- Lists are an ordered sequences. A list is represented with square brackets.Lists are mutable.
+		
+	Tuple:- Tuples are also an ordered sequences. Tuples are written as comma-separated elements within parantheses. 
+		Tuples are immutable.
+	
+	Sets:- Sets are a type of collection. Unlike lists and tuples they are unordered, this means that sets do not 
+	       record element position. Sets only have unique elements. Define a set we use curly brackets.
+	
+	Dictionay:- A dictionary has keys and values. dictionaries are denoted with curly brackets. 
+		    The keys have to be immutable and unique. The values can be immutable, mutable and duplicates.
+		    Each key and value pair is separated by a comma.
+
+Q.12
+Ans:	In python, the string data types are immutable. Which means a string value cannot be updated.
+	
+	I have a string-
+	
+	string= "I+Love+Python"
+	string= string.replace("+"," ")   ## replacing '+' by ' ' space.
+	string= "I Love Python"
+
+Q.13
+Ans:	The ord() function returns the number representing the unicode code of a specified character.
+	Example-	x= ord("d")
+			print(x)
+		output: 100
+
+	Function for getting the datatype of a variable is  type().
