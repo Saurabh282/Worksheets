@@ -1,0 +1,83 @@
+SQL- Worksheet
+
+
+
+Q.1
+Ans: A,D
+Q.2
+Ans: A,B
+Q.3
+Ans: B
+Q.4
+Ans: B
+Q.5
+Ans: A
+Q.6
+Ans: C
+Q.7
+Ans: B
+Q.8
+Ans: B
+Q.9
+Ans: B
+Q.10
+Ans: C
+
+Q.11
+
+Ans:
+
+In computing, a data warehouse (DW or DWH), also known as an enterprise data warehouse (EDW), is a system used for reporting and data analysis, and is considered a core component of business intelligence. Data warehouses are central repositories of integrated data from one or more disparate sources. They store current and historical data in one single place that are used for creating analytical reports for workers throughout the enterprise.
+
+The data stored in the warehouse is uploaded from the operational systems (such as marketing or sales). The data may pass through an operational data store and may require data cleansing for additional operations to ensure data quality before it is used in the DW for reporting.
+
+Extract, transform, load (ETL) and extract, load, transform (E-LT) are the two main approaches used to build a data warehouse system.
+
+
+Q.12
+Ans:
+
+Online transaction processing (OLTP) –
+Online transaction processing provides transaction-oriented applications in a 3-tier architecture. OLTP administers day to day transaction of an organization.
+
+Examples – Uses of OLTP are as follows:
+
+ATM center is an OLTP application.
+OLTP handles the ACID properties during data transaction via the application.
+It’s also used for Online banking, Online airline ticket booking, sending a text message, add a book to the shopping cart.
+
+Online Analytical Processing (OLAP) –
+Online Analytical Processing consists of a type of software tools that are used for data analysis for business decisions. OLAP provides an environment to get insights from the database retrieved from multiple database systems at one time.
+
+Examples – Any type of Data warehouse system is an OLAP system. Uses of OLAP are as follows:
+
+Spottily analyzed songs by users to come up with the personalized homepage of their songs and playlist.
+Netflix movie recommendation system.
+
+
+Q.13
+Ans:
+
+The various characteristics of a data warehouse are discussed below −
+
+Subject Oriented − A data warehouse is subject oriented because it provides information around a subject rather than the organization's ongoing operations. These subjects can be product, customers, suppliers, sales, revenue, etc. A data warehouse does not focus on the ongoing operations, rather it focuses on modelling and analysis of data for decision making.
+
+Integrated − A data warehouse is constructed by integrating data from heterogeneous sources such as relational databases, flat files, etc. This integration enhances the effective analysis of data.
+
+Time Variant − The data collected in a data warehouse is identified with a particular time period. The data in a data warehouse provides information from the historical point of view.
+
+Non-volatile − Non-volatile means the previous data is not erased when new data is added to it. A data warehouse is kept separate from the operational database and therefore frequent changes in operational database is not reflected in the data warehouse.
+
+
+Q.14
+Ans:
+
+Star schema is the fundamental schema among the data mart schema and it is simplest. This schema is widely used to develop or build a data warehouse and dimensional data marts. It includes one or more fact tables indexing any number of dimensional tables. The star schema is a necessary case of the snowflake schema. It is also efficient for handling basic queries.
+
+It is said to be star as its physical model resembles to the star shape having a fact table at its center and the dimension tables at its peripheral representing the star’s points.
+
+
+Q.15
+Ans:
+
+Short for Set Theory as a Language (or Set Language), SETL is a high-level programming language that's based on the mathematical theory of sets. It was developed in the early 1970's by mathematician Professor J. Schwartz. SETL is an interpreted language with a syntax that is resembles C and in many cases similar to Perl. In SETL every statement is terminated by a semicolon. Variable names are case-insensitive and are automatically determined by their last assignment.
