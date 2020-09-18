@@ -1,0 +1,130 @@
+Q.1
+Ans:
+
+Linear kernal:
+
+Linear Kernel is used when the data is Linearly separable, that is, it can be separated using a single Line. It is one of the most common kernels to be used. It is mostly used when there are a Large number of Features in a particular Data Set. One of the examples where there are a lot of features, is Text Classification, as each alphabet is a new feature. So we mostly use Linear Kernel in Text Classification.
+
+RBF:
+
+In machine learning, the radial basis function kernel, or RBF kernel, is a popular kernel function used in various kernelized learning algorithms. In particular, it is commonly used in support vector machine classification.
+
+The RBF kernel on two samples x and x', represented as feature vectors in some input space, is defined as
+
+K(x,x')=exp(-||x-x'||^2/2sigma^2)
+
+
+Polynomial:
+
+The polynomial kernel is a kernel function commonly used with support vector machines (SVMs) and other kernelized models, that represents the similarity of vectors (training samples) in a feature space over polynomials of the original variables, allowing learning of non-linear models.
+
+Q.2
+Ans:
+
+R-squared or Residual Sum of Squares (RSS), RSS  is a better measure of goodness of fit of model in regression. Because however, a smaller or lower value for the residual sum of squares is ideal in any model since it means there's less variation in the data set. In other words, the lower the sum of squared residuals, the better the regression model is at explaining the data.
+
+Q.3
+Ans:
+
+Total Sum of Squares:
+
+The Total SS (TSS or SST) tells you how much variation there is in the dependent variable.
+Total SS = Σ(Yi – mean of Y)^2
+
+Explained Sum of Squares:
+
+The Explained SS tells you how much of the variation in the dependent variable your model explained.
+Explained SS = Σ(Y-Hat – mean of Y)^2
+
+Residual Sum of Squares:
+
+The residual sum of squares tells you how much of the dependent variable’s variation your model did not explain. It is the sum of the squared differences between the actual Y and the predicted Y:
+Residual Sum of Squares = Σ e2
+
+Equation relating these three metrics with each other-
+
+Total SS = Explained SS + Residual Sum of Squares.
+
+Q.4
+Ans:
+
+Gini index or Gini impurity measures the degree or probability of a particular variable being wrongly classified when it is randomly chosen. But what is actually meant by ‘impurity’? If all the elements belong to a single class, then it can be called pure. The degree of Gini index varies between 0 and 1, where 0 denotes that all elements belong to a certain class or if there exists only one class, and 1 denotes that the elements are randomly distributed across various classes. A Gini Index of 0.5 denotes equally distributed elements into some classes.
+
+Q.5
+Ans:
+
+Decision trees are prone to overfitting, especially when a tree is particularly deep. This is due to the amount of specificity we look at leading to smaller sample of events that meet the previous assumptions. This small sample could lead to unsound conclusions.
+
+Q.6
+Ans:
+
+Ensemble methods is a machine learning technique that combines several base models in order to produce one optimal predictive model.
+
+Ensemble methods are meta-algorithms that combine several machine learning techniques into one predictive model in order to decrease variance (bagging), bias (boosting), or improve predictions (stacking). Ensemble methods can be divided into two groups:
+
+Sequential ensemble methods where the base learners are generated sequentially (e.g. AdaBoost).
+The basic motivation of sequential methods is to exploit the dependence between the base learners. The overall performance can be boosted by weighing previously mislabeled examples with higher weight.
+
+Parallel ensemble methods where the base learners are generated in parallel (e.g. Random Forest).
+The basic motivation of parallel methods is to exploit independence between the base learners since the error can be reduced dramatically by averaging.
+
+Q.7
+Ans:
+
+Bagging : Bagging is also known as bootstrap aggregating sits on top of the majority voting principle. The samples are bootstrapped each time when the model is trained. When the samples are chosen, they are used to train and validate the predictions. The samples are then replaced back into the training set. The samples are selected at random. This technique is known as bagging. To sum up, base classifiers such as decision trees are fitted on random subsets of the original training set. Subsequently, the individual predictions are aggregated (voting or averaging etc.). The final results are then used as predictions. It reduces the variance of a black box estimator. Due to this the chances of overfitting is ruled out.
+
+Boosting: The concept of Adaptive Boost revolves around correcting previous classifier mistakes. Each classifier gets trained on the sample set and learns to predict. The misclassification errors are then fed into the next classifier in the chain and are used to correct the mistakes until the final model predicts accurate results. When a weak-classifier misclassifies a training sample, the algorithm then uses these very samples to improve the performance of the ensemble.
+
+Q.8
+Ans:
+
+Out-of-bag (OOB) error, also called out-of-bag estimate, is a method of measuring the prediction error of random forests, boosted decision trees, and other machine learning models utilizing bootstrap aggregating (bagging) to sub-sample data samples used for training.
+
+Q.9
+Ans:
+
+Cross-validation is a resampling procedure used to evaluate machine learning models on a limited data sample.
+
+The procedure has a single parameter called k that refers to the number of groups that a given data sample is to be split into. As such, the procedure is often called k-fold cross-validation. When a specific value for k is chosen, it may be used in place of k in the reference to the model, such as k=10 becoming 10-fold cross-validation.
+
+Q.10
+Ans:
+
+A hyperparameter is a parameter whose value is set before the learning process begins.
+Hyperparameters are important because they directly control the behaviour of the training algorithm and have a significant impact on the performance of the model is being trained.
+
+Q.11
+Ans:
+
+When the learning rate is too large, gradient descent can inadvertently increase rather than decrease the training error.
+
+Q.12
+Ans:
+
+Bias is the simplifying assumptions made by the model to make the target function easier to approximate.
+Variance is the amount that the estimate of the target function will change given different training data.
+Trade-off is tension between the error introduced by the bias and the variance.
+
+Bias–variance tradeoff is the property of a set of predictive models whereby models with a lower bias in parameter estimation have a higher variance of the parameter estimates across samples, and vice versa.
+
+Q.13
+Ans:
+
+Regularisation is a technique used to reduce the errors by fitting the function appropriately on the given training set and avoid overfitting.
+The commonly used regularisation techniques are :
+
+L1 regularisation, which is called LASSO(Least Absolute Shrinkage and Selection Operator) regression.
+L2 regularisation, which is called Ridge regression.
+
+Q.14
+Ans:
+
+Adaboost increases the accuracy by giving more weightage to the target which is misclassified by the model. At each iteration, Adaptive boosting algorithm changes the sample distribution by modifying the weights attached to each of the instances. It increases the weights of the wrongly predicted instances and decreases the ones of the correctly predicted instances.
+
+Gradient boosting calculates the gradient (derivative) of the Loss Function with respect to the prediction (instead of the features). Gradient boosting increases the accuracy by minimizing the Loss Function (error which is difference of actual and predicted value) and having this loss as target for the next iteration.
+
+
+Q.15
+Ans:
+
+No, we can not use Logistic Regression for classification of Non-Linear Data, because Logistic regression is considered a generalized linear model because the outcome always depends on the sum of the inputs and parameters. Or in other words, the output cannot depend on the product of its parameters.
