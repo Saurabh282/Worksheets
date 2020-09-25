@@ -1,0 +1,67 @@
+Q.1
+Ans:  > CREATE TABLE Customers(
+     -> customerNumber int,
+     -> customerName varchar(100),
+     -> contactLastName varchar(100),
+     -> contactFirstname varchar(100),
+     -> phone int,
+     -> addressLine1 varchar(100),
+     -> addressLine2 varchar(100),
+     -> city varchar(100),
+     -> state varchar(100),
+     -> postalCode int,
+     -> country varchar(100),
+     -> salesRepEmployeeNumber int,
+     -> creditLimit int);
+
+
+Q.2
+Ans:  > CREATE TABLE Orders(
+     -> orderNumber int,
+     -> orderDate int,
+     -> requiredDate int,
+     -> shippedDate int,
+     -> status varchar(30),
+     -> comments varchar(200),
+     -> custerNumber int);
+
+
+Q.3
+Ans: SELECT * from Orders;
+
+
+Q.4
+Ans: SELECT comments FROM Orders;
+
+Q.5
+Ans: SELECT orderDate, orderNumber from Orders;
+
+Q.6
+Ans: SELECT employeeNumber, lastName, firstName form Employees;
+
+Q.7
+Ans: SELECT orderNumber, customerName from Orders where customerid=101;
+
+Q.8
+Ans: SELECT customerName, salesRepEmployeeNumber from Customers;
+
+Q.9
+Ans: SELECT paymentDate, amount from Payments;
+
+Q.10
+Ans: SELECT productName, productDescription, MSRP from Products;
+
+Q.11
+Ans: SELECT productName, productDescription from Products where productCode= 123
+
+Q.12
+Ans: SELECT city from Customers where ???
+
+Q.13
+Ans: SELECT state from Customers where ???
+
+Q.14
+Ans: SELECT employeeNumber, ???
+
+Q.15
+Ans: ????
