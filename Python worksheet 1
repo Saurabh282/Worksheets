@@ -1,0 +1,120 @@
+Q.1
+Ans: C
+
+Q.2
+Ans: B
+
+Q.3
+Ans: C
+
+Q.4
+Ans: A
+
+Q.5
+Ans: ?
+
+Q.6
+Ans: D
+
+Q.7
+Ans: A
+
+Q.8
+Ans: C
+
+Q.9
+Ans: A,C
+
+Q.10
+Ans: A,B
+
+Q.11
+Ans:   num=int(input('enter a number'))
+       f=1
+       for i in range(1,num+1):
+           f=f*i
+       print ('factorial of', num, '=',f)
+       
+       Output: 720
+
+Q.12
+Ans:   number = int(input("Enter any number: "))
+
+
+       if number > 1:
+          for i in range(2, number):
+              if (number % i) == 0:
+                  print(number, "is not a prime number")
+                  break
+          else:
+               print(number, "is a prime number")
+
+
+       else:
+            print(number, "is not a prime number")
+            
+            
+       output:
+       #If we enter any number like we entered 45
+       
+       45 is not a prime number
+       
+
+Q.13
+Ans:   # function which return reverse of a string
+ 
+      def isPalindrome(s):
+          return s == s[::-1]
+ 
+ 
+      # Driver code
+      s = "malayalam"
+      ans = isPalindrome(s)
+ 
+      if ans:
+          print("Yes")
+      else:
+          print("No")
+          
+   Output: Yes
+   
+
+
+Q.14
+Ans: def findHypotenuse(side1, side2): 
+  
+         h = (((side1 * side1) + (side2 * side2))**(1/2)); 
+         return h; 
+  
+     # Driver code 
+     side1 = 3; 
+     side2 = 4; 
+  
+     print(findHypotenuse(side1, side2));
+     
+     
+   Output: 5
+   
+
+
+Q.15
+Ans:    # initializing string  
+
+       test_str = "Pythonfordatascience"
+       all_freq = {} 
+  
+      for i in test_str: 
+          if i in all_freq: 
+              all_freq[i] += 1
+          else: 
+              all_freq[i] = 1
+
+# printing result  
+print ("Count of all characters in Pythonfordatascience is :\n "
+                                        +  str(all_freq)) 
+                                        
+                                        
+    Output:  
+    
+     Count of all characters in Pythonfordatascience is :
+ {'P': 1, 'y': 1, 't': 2, 'h': 1, 'o': 2, 'n': 2, 'f': 1, 'r': 1, 'd': 1, 'a': 2, 's': 1, 'c': 2, 'i': 1, 'e': 2}
