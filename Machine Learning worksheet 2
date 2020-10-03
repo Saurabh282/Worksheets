@@ -1,0 +1,67 @@
+Q.1
+Ans: D
+
+Q.2
+Ans: D
+
+Q.3
+Ans: C
+
+Q.4
+Ans: A
+
+Q.5
+Ans: B
+
+Q.6
+Ans: A,D
+
+Q.7
+Ans: B,C
+
+Q.8
+Ans: D
+
+Q.9
+Ans: ?
+
+Q.10
+Ans: 
+      The adjusted R2 will penalize you for adding independent variables that do not fit the model. Why? In regression analysis, it can be tempting to add more variables to the data as you think of them. Some of those variables will be significant, but you can’t be sure that significance is just by chance. The adjusted R2 will compensate for this by that penalizing you for those extra variables.
+
+While values are usually positive, they can be negative as well. This could happen if your R2 is zero; After the adjustment, the value can dip below zero. This usually indicates that your model is a poor fit for your data. Other problems with your model can also cause sub-zero values, such as not putting a constant term in your model.
+
+
+Q.11
+Ans:
+    Ridge Regression :
+In Ridge regression, we add a penalty term which is equal to the square of the coefficient. The L2 term is equal to the square of the magnitude of the coefficients. We also add a coefficient  \lambda  to control that penalty term. In this case if  \lambda  is zero then the equation is the basic OLS else if  \lambda \, > \, 0 then it will add a constraint to the coefficient. As we increase the value of \lambda this constraint causes the value of the coefficient to tend towards zero. This leads to both low variance (as some coefficient leads to negligible effect on prediction) and low bias (minimization of coefficient reduce the dependency of prediction on a particular variable).
+where \lambda is regularization penalty.
+
+    Lasso Regression :
+Lasso regression stands for Least Absolute Shrinkage and Selection Operator. It adds penalty term to the cost function. This term is the absolute sum of the coefficients. As the value of coefficients increases from 0 this term penalizes, cause model, to decrease the value of coefficients in order to reduce loss. The difference between ridge and lasso regression is that it tends to make coefficients to absolute zero as compared to Ridge which never sets the value of coefficient to absolute zero.
+
+
+Q.12
+Ans:
+    A variance inflation factor(VIF) detects multicollinearity in regression analysis. Multicollinearity is when there’s correlation between predictors (i.e. independent variables) in a model; it’s presence can adversely affect your regression results. The VIF estimates how much the variance of a regression coefficient is inflated due to multicollinearity in the model.
+    Variance inflation factors range from 1 upwards. The numerical value for VIF tells you (in decimal form) what percentage the variance (i.e. the standard error squared) is inflated for each coefficient. For example, a VIF of 1.9 tells you that the variance of a particular coefficient is 90% bigger than what you would expect if there was no multicollinearity — if there was no correlation with other predictors.
+A rule of thumb for interpreting the variance inflation factor:
+
+1 = not correlated.
+Between 1 and 5 = moderately correlated.
+Greater than 5 = highly correlated.
+
+Q.13
+Ans:
+     Feature Scaling or Standardization:
+     It is a step of Data Pre Processing which is applied to independent variables or features of data. It basically helps to normalise the data within a particular range. Sometimes, it also helps in speeding up the calculations in an algorithm.
+     
+Q.14
+Ans:
+    The goodness of fit test is used to test if sample data fits a distribution from a certain population (i.e. a population with a normal distribution or one with a Weibull distribution). In other words, it tells you if your sample data represents the data you would expect to find in the actual population. Goodness of fit tests commonly used in statistics are:
+
+The chi-square.
+Kolmogorov-Smirnov.
+Anderson-Darling.
+Shipiro-Wilk.
