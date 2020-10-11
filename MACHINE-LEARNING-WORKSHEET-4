@@ -1,0 +1,91 @@
+Machine Learning Worksheet-4
+
+
+Ans:1 (A)
+
+Ans:2 (A)
+
+Ans:3 (B)
+
+Ans:4 (A)
+
+Ans:5 (A)
+
+Ans:6 (C)
+
+Ans:7 (B)
+
+Ans:8 (C)
+
+Ans:9 ??
+
+
+Ans:10 
+        Random forests are a strong modeling technique and much more robust than a single decision tree. They aggregate many decision trees to limit overfitting as well as error due to bias and therefore yield useful results.
+Random forests consist of multiple single trees each based on a random sample of the training data. They are typically more accurate than single decision trees.
+Two reasons why random forests outperform single decision trees.
+1. Higher resolution in the feature space
+Trees are unpruned. While a single decision tree like CART is often pruned, a random forest tree is fully grown and unpruned, and so, naturally, the feature space is split into more and smaller regions.
+Trees are diverse. Each random forest tree is learned on a random sample, and at each node, a random set of features are considered for splitting. Both mechanisms create diversity among the trees.
+2. Handling Overfitting
+A single decision tree needs pruning to avoid overfitting. The following shows the decision boundary from an unpruned tree. The boundary is smoother but makes obvious mistakes (overfitting).
+
+
+Ans:11
+        Scaling, Standardizing and Transformation are important steps of numeric feature engineering and they are being used to treat skewed features and rescale them for modelling. If Data quality is not good, even high-performance algorithms are of no use. It’s as simple as Garbage In : Garbage Out.
+Scaling is required to rescale the data and it’s used when we want features to be compared on the same scale for our algorithm. And, when all features are in the same scale, it also helps algorithms to understand the relative relationship better.
+If dependent features are transformed to normality, Scaling should be applied after transformation.
+
+
+Sklearn has following four scalers primarily
+1. Minmax scaler
+2. Robust scaler
+3. Standard Scaler
+4. Normalizer.
+
+
+Ans:12
+        Optimization refers to the task of minimizing/maximizing an objective function f(x) parameterized by x. In machine/deep learning terminology, it’s the task of minimizing the cost/loss function J(w) parameterized by the model’s parameters w ∈ R^d.
+
+        Gradient Descent is the most common optimization algorithm in machine learning and deep learning. It is a first-order optimization algorithm. This means it only takes into account the first derivative when performing the updates on the parameters. On each iteration, we update the parameters in the opposite direction of the gradient of the objective function J(w) w.r.t the parameters where the gradient gives the direction of the steepest ascent. The size of the step we take on each iteration to reach the local minimum is determined by the learning rate α. Therefore, we follow the direction of the slope downhill until we reach a local minimum.
+
+
+Ans:13
+        In the framework of imbalanced data-sets, accuracy is no longer a proper measure, since it does not distinguish between the numbers of correctly classified examples of different classes.
+
+           A pair of evaluations metrics that are commonly used when there is a class imbalance are precision and recall. Precision is defined as the number of true positives divided by the sum of true positives and false positives.
+           
+
+
+Ans:14
+        The F-score, also called the F1-score, is a measure of a model’s accuracy on a dataset. It is used to evaluate binary classification systems, which classify examples into ‘positive’ or ‘negative’. The F-score is a way of combining the precision and recall of the model, and it is defined as the harmonic mean of the model’s precision and recall.
+           
+The F-score is commonly used for evaluating information retrieval systems such as search engines, and also for many kinds of machine learning models, in particular in natural language processing.
+
+      F-score Formula:
+
+ The formula for the standard F1-score is the harmonic mean of the precision and recall. A perfect model has an F-score of 1.
+           
+           F1= 2(precision * recall / precision + recall)
+           
+
+Ans:15
+        Most scikit-learn objects are either transformers or models.
+Transformers are for pre-processing before modeling. The Imputer class (like SimpleImputer for filling in missing values) and FeatureSelection classes in sklearn are an example of some transformers.
+Models are used to make predictions like Linear Regression model, Decision Tree model, Random Forest model etc. You will usually pre-process your data (with transformers) before putting it in a model.
+Now the usage of methods fit(), transform(), fit_transform() and predict() depend on the type of object.
+
+For Transformers:
+1. fit() - It is used for calculating the initial filling of parameters on the training data (like mean of the column values) and saves them as an internal ob00jects state.
+2. transform() - Use the above calculated values and return modified training data
+3. fit_transform() - It joins above two steps. Internally, it just calls first fit() and then transform() on the same data.
+
+For Models:
+1. fit() - It calculates the parameters/weights on training data (e.g. parameters returned by coef() in case of Linear Regression) and saves them as an internal objects state.
+2. predict() - Use the above calculated weights on test data to make the predictions
+3. transform() - Cannot be used
+4. fit_transform() - Cannot be used
+           
+
+
+
