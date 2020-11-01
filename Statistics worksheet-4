@@ -1,0 +1,86 @@
+Statistics-4
+
+Ans:1 (A)
+
+Ans:2 (A)
+
+Ans:3 (B)
+
+Ans:4 (D)
+
+Ans:5 (C)
+
+Ans:6 (B)
+
+Ans:7 (B)
+
+Ans:8 (A)
+
+Ans:9 (C)
+
+Ans:10 
+        The normal distribution is the most important probability distribution in statistics because it fits many natural phenomena. 
+        For example, heights, blood pressure, measurement error, and IQ scores follow the normal distribution. 
+        It is also known as the Gaussian distribution and the bell curve.
+
+        The normal distribution is a probability function that describes how the values of a variable are distributed. 
+        It is a symmetric distribution where most of the observations cluster around the central peak and the probabilities for values further away 
+        from the mean taper off equally in both directions. Extreme values in both tails of the distribution are similarly unlikely.
+        
+Ans:11
+        First, determine the pattern of your missing data. There are three types of missing data:
+
+     Missing Completely at Random:  There is no pattern in the missing data on any variables. This is the best you can hope for.
+     Missing at Random: There is a pattern in the missing data but not on your primary dependent variables such as likelihood to recommend 
+     or SUS Scores.
+     Missing Not at Random: There is a pattern in the missing data that affect your primary dependent variables. 
+     For example, lower-income participants are less likely to respond and thus affect your conclusions about income and likelihood to recommend. 
+     Missing not at random is your worst-case scenario. Proceed with caution.
+     
+      Here are seven things you can do about that missing data.
+      1.Listwise Deletion
+      2.Recover the Values
+      3.Educated Guessing
+      4.Average Imputation
+      5.Common-Point Imputation
+      6.Regression Substitution
+      7.Multiple Imputation
+      
+Ans:12
+      A/B testing (also known as split testing) is a process of showing two variants of the same web page to different segments of 
+      website visitors at the same time and comparing which variant drives more conversions.
+      A/B testing offers a very systematic way of finding out what works and what doesn’t work in any given marketing campaign. 
+      Most marketing efforts are geared toward driving more traffic. But, as traffic acquisition becomes more difficult and expensive, 
+      it becomes paramount to offer the best experience to your users who come to your website. This will help them achieve their goals and
+      allow them to convert in the fastest and most efficient manner possible. A/B testing in marketing allows you to make the most out of 
+      your existing traffic.
+
+
+Ans:13
+      Bad practice in general
+      If just estimating means: mean imputation preserves the mean of the observed data.
+      Leads to an underestimate of the standard deviation.
+      Distorts relationships between variables by “pulling” estimates of the correlation toward zero.
+      
+Ans:14
+       In statistics, linear regression is a linear approach to modeling the relationship between a scalar response and one or more explanatory
+       variables. The case of one explanatory variable is called simple linear regression. For more than one explanatory variable, 
+       the process is called multiple linear regression.
+      Linear regression is a basic and commonly used type of predictive analysis.  The overall idea of regression is to examine two things: 
+      (1) does a set of predictor variables do a good job in predicting an outcome (dependent) variable?  
+      (2) Which variables in particular are significant predictors of the outcome variable, and in what way do they–indicated by 
+      the magnitude and sign of the beta estimates–impact the outcome variable?  
+      These regression estimates are used to explain the relationship between one dependent variable and one or more independent variables. 
+
+Ans:15
+      The two main branches of statistics are descriptive statistics and inferential statistics. 
+      Both of these are employed in scientific analysis of data and both are equally important for the student of statistics.
+      
+      Descriptive Statistics:
+      Descriptive statistics deals with the presentation and collection of data. This is usually the first part of a statistical analysis. 
+      It is usually not as simple as it sounds, and the statistician needs to be aware of designing experiments, choosing the right focus group and
+      avoid biases that are so easy to creep into the experiment.
+      
+      Inferential Statistics:
+      Inferential statistics, as the name suggests, involves drawing the right conclusions from the statistical analysis that has been performed 
+      using descriptive statistics. In the end, it is the inferences that make studies important and this aspect is dealt with in inferential statistics.
