@@ -1,0 +1,81 @@
+
+
+Ans:1 (B) As number of hidden layers increase, model capacity increases
+
+Ans:2 (C) It normalizes (changes) all the input before sending it to the next layer
+
+Ans:3 (B) Network will converge
+
+Ans:4 (D) All of these
+
+Ans:5 (C) (-4, -4, 3)
+
+Ans:6 (B) Simulate the network on a test dataset after every epoch of training. Stop training when the generalization error starts to increase
+
+Ans:7 (A)  Mini Batch Gradient Descent
+
+Ans:8 (A) Freeze all the layers except the last, re-train the last layer
+
+Ans:9 (A) Overfitting  (B) Training is too slow
+
+Ans:10 (B) sigmoid  (C) softmax
+
+Ans:11
+        A neural network without an activation function is essentially just a linear regression model. We understand that using an activation function introduces an
+       additional step at each layer during the forward propagation. Imagine a neural network without the activation functions. In that case, every neuron will only
+       be performing a linear transformation on the inputs using the weights and biases. Although linear transformations make the neural network simpler, but this 
+       network would be less powerful and will not be able to learn the complex patterns from the data.
+
+
+Ans:12
+       Forward Propagation :-The input X provides the initial information that then propagates to the hidden units at each layer and finally produce the output y.
+       The architecture of the network entails determining its depth, width, and activation functions used on each layer. Depth is the number of hidden layers. Width
+       is the number of units (nodes) on each hidden layer since we don’t control neither input layer nor output layer dimensions. There are quite a few set of 
+       activation functions such Rectified Linear Unit, Sigmoid, Hyperbolic tangent, etc. Research has proven that deeper networks outperform networks with more 
+       hidden units. Therefore, it’s always better and won’t hurt to train a deeper network (with diminishing returns).
+
+       Back-Propagation:- Allows the information to go back from the cost backward through the network in order to compute the gradient. Therefore, loop over the nodes 
+       starting at the final node in reverse topological order to compute the derivative of the final node output with respect to each edge’s node tail. Doing so will help
+       us know who is responsible for the most error and change the parameters in that direction. The following derivatives’ formulas will help us write the back-propagate
+       functions: Since b^l is always a vector, the sum would be across rows (since each column is an example).
+       
+Ans:13
+       BATCH GRADIENT DESCENT:
+       Batch gradient descent, also called vanilla gradient descent, calculates the error for each example within the training dataset, 
+       but only after all training examples have been evaluated does the model get updated. This whole process is like a cycle and it's called 
+       a training epoch.
+
+        *Can be stuck in Local Minima very easily.
+        *It also requires the entire training dataset be in memory and available to the algorithm.
+        
+       STOCHASTIC GRADIENT DESCENT:
+       Stochastic gradient descent (often abbreviated SGD) is an iterative method for optimizing an objective function with suitable smoothness 
+       properties (e.g. differentiable or subdifferentiable). It can be regarded as a stochastic approximation of gradient descent optimization, 
+       since it replaces the actual gradient (calculated from the entire data set) by an estimate thereof (calculated from a randomly selected 
+       subset of the data). Especially in high-dimensional optimization problems this reduces the computational burden, achieving faster iterations
+       in trade for a lower convergence rate.
+       
+       MINI-BATCH GRADIENT DESCENT:
+       Mini-batch gradient descent is the go-to method since it’s a combination of the concepts of SGD and batch gradient descent. 
+       It simply splits the training dataset into small batches and performs an update for each of those batches. This creates a balance between 
+       the robustness of stochastic gradient descent and the efficiency of batch gradient descent.
+       Common mini-batch sizes range between 50 and 256, but like any other machine learning technique, there is no clear rule because it varies 
+       for different applications. This is the go-to algorithm when training a neural network and it is the most common type of gradient descent 
+       within deep learning.
+       
+Ans:14
+      Benifits of Mini-Batch Gradient Descent
+      1. Computational Efficiency: In terms of computational efficiency, this technique lies between the two previously introduced techniques.
+      2. Stable Convergence: Another advantage is the more stable converge towards the global minimum since we calculate an average gradient over 
+      n samples that results in less noise.
+      3. Faster Learning: As we perform weight updates more often than with stochastic gradient descent, in this case, we achieve a much faster 
+      learning process.
+      
+Ans:15
+      Transfer learning is a machine learning method where a model developed for a task is reused as the starting point for a model on a second task.
+      Transfer learning (TL) is a research problem in machine learning (ML) that focuses on storing knowledge gained while solving one problem and 
+      applying it to a different but related problem. For example, knowledge gained while learning to recognize cars could apply when trying to 
+      recognize trucks. This area of research bears some relation to the long history of psychological literature on transfer of learning, 
+      although formal ties between the two fields are limited. From the practical standpoint, reusing or transferring information from previously 
+      learned tasks for the learning of new tasks has the potential to significantly improve the sample efficiency of a reinforcement learning 
+      agent.
