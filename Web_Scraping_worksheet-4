@@ -1,0 +1,23 @@
+
+
+Ans:1 (B)
+Ans:2 (D)
+Ans:3 (B)
+Ans:4 (D)
+Ans:5 (B)
+Ans:6 (A)
+Ans:7 (D)
+Ans:8 (C)
+Ans:9 (B)
+Ans:10 (D)
+Ans:11 (A) (C)
+Ans:12 (D)
+Ans:13 (C)
+Ans:14 (A)
+
+Ans:15
+       find()：Gets the first tag of the incoming HTML object that satisfies the condition and returns. A function of a label group or a single label.
+              Prototype: find(tag, atributes, recursive, text, keywords)
+      
+       findAll()：Get all the conditions of the incoming HTML object and return it.
+              Prototype: findAll(tag, atributes, recursive, text, limit, keywords)
