@@ -1,0 +1,25 @@
+
+
+Ans:1 (B)
+
+Ans:2 (D)
+
+Ans:3 (B)
+
+Ans:4 (D)
+
+Ans:5 (C)
+
+Ans:6 (D)
+
+Ans:7 (C)
+
+Ans:8 (C)
+
+Ans:9 (D)
+
+Ans:10 (B)
+
+Ans:11 
+        Some more differences are: List can be 2-D whereas a set can't. As list are ordered (IE. have serial number) list are comparatively slow to execute whereas sets
+        are fast.
